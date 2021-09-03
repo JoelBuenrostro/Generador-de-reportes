@@ -1,23 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Custom Components
+import LoadData from './Components/LoadData';
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Generador de reportes para pruebas de laboratorio
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://www.udg.mx/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Universidad de Guadalajara
         </a>
       </header>
+
+      <h3>Datos de la prueba</h3>
+      <section className="components">
+
+          <LoadData />
+
+        </section>
+
     </div>
   );
 }
