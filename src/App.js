@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './Assets/Images/logo.svg';
+import './Assets/CSS/App.css';
 
 // Custom Components
 import LoadData from './Components/LoadData';
