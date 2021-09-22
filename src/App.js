@@ -1,37 +1,42 @@
-import logo from './Assets/Images/logo.svg';
-import './Assets/CSS/App.css';
+import React, { Component } from 'react';
+import Table from './Components/Table';
+import Form from './Components/Form';
 
-// Custom Components
-import LoadData from './Components/LoadData';
+class App extends Component {
+    state = {
+        characters: []
+    };
 
+    removeCharacter = index => {
+        const { characters } = this.state;
+    
+        this.setState({
+            characters: characters.filter((character, i) => { 
+                return i !== index;
+            })
+        });
+    }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Generador de reportes para pruebas de laboratorio
-        </p>
-        <a
-          className="App-link"
-          href="http://www.udg.mx/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Universidad de Guadalajara
-        </a>
-      </header>
+    handleSubmit = character => {
+        this.setState({characters: [...this.state.characters, character]});
+    }
 
-      <h3>Datos de la prueba</h3>
-      <section className="components">
-
-          <LoadData />
-
-        </section>
-
-    </div>
-  );
+    render() {
+        const { characters } = this.state;
+        
+        return (
+            <div className="container">
+                <h1>Generador de reporte</h1>
+                <p>Agrega tu nombre</p>
+                <Table
+                    characterData={characters}
+                    removeCharacter={this.removeCharacter}
+                />
+                <h3>Agregar Usuario</h3>
+                <Form handleSubmit={this.handleSubmit} />
+            </div>
+        );
+    }
 }
 
 export default App;

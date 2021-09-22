@@ -12,8 +12,16 @@ Sistema generador de reportes para seguimiento de pruebas de investigación en u
 - [Hospedaje](#Hospedaje)
   - [Sitio web](#Sitio_web)
   - [Placa de estatus](#Placa_de_estatus)
+- [Licencia](#Licencia)
 
 ## React
+
+React es una libreria de Javascript de codigo abierto creada por Facebook, es usada para crear interfaces de ususario usando el modelo vista controlador (MVC).
+Uno de los aspectos mas importantes de React son los componentes, estos son elementos HTML reusables para construir interfaces rapidamente.
+
+- Documentacion en español: <https://es.reactjs.org/>
+
+- Codigo fuente en GitHub: <https://github.com/facebook/react/>
 
 Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
@@ -52,3 +60,7 @@ El generador puede ser accesado desde https://generador-de-reportes.netlify.app/
 ### Placa de estatus
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f8837433-47ec-4070-803a-3726d996b7d9/deploy-status)](https://app.netlify.com/sites/generador-de-reportes/deploys)
+
+## Licencia
+
+Este proyecto es de codigo libre bajo la licencia MIT.
