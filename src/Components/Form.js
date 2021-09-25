@@ -1,57 +1,39 @@
-import React, {Component} from 'react';
+import React from 'react'
 
-class Form extends Component {
-    constructor(props) {
-        super(props);
-        
-        this.initialState = {
-            name: '',
-            lastname: ''
-        };
-
-        this.state = this.initialState;
-    }
-
-    handleChange = event => {
-        const { name, value } = event.target;
-
-        this.setState({
-            [name] : value
-        });
-    }
-
-    onFormSubmit = (event) => {
-        event.preventDefault();
-        
-        this.props.handleSubmit(this.state);
-        this.setState(this.initialState);
-    }
-
-    render() {
-        const { name, lastname } = this.state; 
-
-        return (
-            <form onSubmit={this.onFormSubmit}>
-                <label for="name">Nombre</label>
-                <input 
-                    type="text" 
-                    name="name" 
-                    id="name"
-                    value={name} 
-                    onChange={this.handleChange} />
-                <label for="lastname">Apellido</label>
-                <input 
-                    type="text" 
-                    name="lastname" 
-                    id="lastname"
-                    value={lastname} 
-                    onChange={this.handleChange} />
-                <button type="submit">
-                    Agregar
-                </button>
-            </form>
-        );
-    }
+function Form() {
+  return (
+    <form style={userForm}>
+      <p>Agrega tu nombre</p>
+      <div style={userFormRow}>
+        <label style={userFormInput} for="name">Nombre: </label>
+        <input style={userFormInput} type="text"></input>
+      </div>
+      <div style={userFormRow}>
+        <label style={userFormInput} for="name">Apellido: </label>
+        <input style={userFormInput} type="text"></input>
+      </div>
+      <div style={userFormRow}>
+        <input style={userFormInput} type="submit" value="Agregar"></input>
+      </div>
+    </form>
+  )
 }
 
-export default Form;
+//Estilos
+const userForm = {
+  display: "table",
+  fontSize: '22px',
+  //border: 'solid',
+}
+
+const userFormRow = {
+  display: "table-row"
+}
+
+const userFormInput = {
+  display: "table-cell",
+  marginBottom: "10px",
+  paddingRight: "10px"
+}
+
+export default Form

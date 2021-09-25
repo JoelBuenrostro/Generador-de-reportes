@@ -1,42 +1,22 @@
-import React, { Component } from 'react';
-import Table from './Components/Table';
-import Form from './Components/Form';
+import React from 'react'
 
-class App extends Component {
-    state = {
-        characters: []
-    };
+//Componentes
+import Header from './components/Header'
+import Form from './components/Form'
+import Samples from './components/Samples'
 
-    removeCharacter = index => {
-        const { characters } = this.state;
-    
-        this.setState({
-            characters: characters.filter((character, i) => { 
-                return i !== index;
-            })
-        });
-    }
-
-    handleSubmit = character => {
-        this.setState({characters: [...this.state.characters, character]});
-    }
-
-    render() {
-        const { characters } = this.state;
-        
-        return (
-            <div className="container">
-                <h1>Generador de reporte</h1>
-                <p>Agrega tu nombre</p>
-                <Table
-                    characterData={characters}
-                    removeCharacter={this.removeCharacter}
-                />
-                <h3>Agregar Usuario</h3>
-                <Form handleSubmit={this.handleSubmit} />
-            </div>
-        );
-    }
+function App() {
+  return (
+    <>
+      <Header />
+      <Form />
+      <Samples />
+      <Samples />
+      <Samples />
+      <Samples />
+      <Samples />
+    </>
+  )
 }
 
 export default App;

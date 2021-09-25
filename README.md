@@ -51,11 +51,11 @@ Mas informacion en [deployment](https://facebook.github.io/create-react-app/docs
 Netlify es una plataforma para desarrollo web que multiplica la productividad. Esta plataforma nos permite hospedar proyectos personales, sitios de hobby o expewrimentos de manera gratuita. Millones de desarrolladores usan Netlify para simplificar sus flujos de trabajo y escalar sus proyectos sin esfuerzo.
 
 Video de demostracion:
-https://www.netlify.com/v3/video/homepage-demo-v3-optimized.mp4
+<https://www.netlify.com/v3/video/homepage-demo-v3-optimized.mp4>
 
 ### Sitio web
 
-El generador puede ser accesado desde https://generador-de-reportes.netlify.app/ para ver los cambios en tiempo real.
+El generador puede ser accesado desde <https://generador-de-reportes.netlify.app/> para ver los cambios en tiempo real.
 
 ### Placa de estatus
 
