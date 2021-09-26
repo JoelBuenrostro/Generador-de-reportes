@@ -9,6 +9,7 @@ Sistema generador de reportes para seguimiento de pruebas de investigación en u
   - [npm start](#npm_start)
   - [npm test](#npm_test)
   - [npm run build](#npm_run_build)
+- [React-Bootstrap](#React-Bootstrap)
 - [Hospedaje](#Hospedaje)
   - [Sitio web](#Sitio_web)
   - [Placa de estatus](#Placa_de_estatus)
@@ -45,6 +46,12 @@ Construye la aplicacion para produccion en la carpeta `build`
 Optimiza la construccion de React correctamente y la optimiza para el mejor rendimiento. La aplicacion estara lista para desplegar.
 
 Mas informacion en [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+
+## React-Bootstrap
+
+React-Boostrap reemplaza el CDNde Bootstrap original. Cada componente ha sido construido desde cero como un componente React.
+
+<https://github.com/react-bootstrap/react-bootstrap>
 
 ## Hospedaje
 
