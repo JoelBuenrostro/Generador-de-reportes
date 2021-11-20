@@ -2,19 +2,19 @@ import React from 'react'
 
 //Componentes React-Bootstrap
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
 
 function Header() {
   return (
     <>
-      <Container fluid>
-        <Row className="mb-3 mt-3 text-center">
-          <Col><h1>Generador de reportes</h1></Col>
-        </Row>
-      </Container>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+        <Navbar.Brand href="#home">Generador de reportes</Navbar.Brand>
+        </Container>
+      </Navbar>
     </>
   )
 }
