@@ -1,22 +1,57 @@
 import React from 'react'
 
-//Componentes React-Bootstrap
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+//Componentes MDB5
+import {
+  MDBNavbar,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBContainer,
+  MDBIcon } from 'mdb-react-ui-kit';
+
+import Image from './Image'
 
 
 function Header() {
   return (
-    <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-        <Navbar.Brand href="#home">Generador de reportes</Navbar.Brand>
-        </Container>
-      </Navbar>
-    </>
-  )
+    <header>
+      <MDBNavbar expand='lg' light bgColor='dark'>
+        <MDBContainer fluid>
+          <MDBNavbarToggler
+            aria-controls='navbarExample01'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <MDBIcon fas icon='bars' />
+          </MDBNavbarToggler>
+          <div className='collapse navbar-collapse' id='navbarExample01'>
+            <MDBNavbarNav right className='mb-2 mb-lg-0'>
+              <MDBNavbarItem active>
+                <MDBNavbarLink aria-current='page' href='#'>
+                  Home
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>About</MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+          </div>
+        </MDBContainer>
+      </MDBNavbar>
+
+      <div className='p-5 text-center bg-light'>
+        <h1 className='mb-3'>Generador de Reportes</h1>
+        <Image />
+      </div>
+    </header>
+  );
 }
 
 export default Header;
