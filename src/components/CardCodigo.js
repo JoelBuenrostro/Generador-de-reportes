@@ -19,7 +19,9 @@ function CardCodigo() {
         <strong> Una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones </strong><br/>
         GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. 
         Se utiliza principalmente para la creación de código fuente de programas de ordenador.
-
+        <br />
+        <a href="https://github.com/JoelBuenrostro/Generador-de-reportes.com">Codigo fuente</a><br />
+        <a href="https://generador-de-reportes.netlify.app">Despliegue</a>
         </MDBTypography>
     </div>
     )
