@@ -13,10 +13,8 @@ import {
   MDBCollapse
 } from 'mdb-react-ui-kit';
 
-import Image from './Image'
 
-
-function Header() {
+function HeaderNoImage() {
   const [showBasic, setShowBasic] = useState(false);
   return (
     <header>
@@ -58,13 +56,9 @@ function Header() {
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
-
-      <div className='p-5 text-center bg-light'>
-        <h1 className='mb-3'>Generador de Reportes</h1>
-        <Image />
-      </div>
+    <br/>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default HeaderNoImage;
