@@ -26,6 +26,11 @@ function CardSistema() {
         utilizado con las extensiones de React-based que se encargan de las partes no-UI (que no forman parte de la interfaz de usuario) 
         de una aplicación web.<br/>
 
+        <a href="https://github.com/JoelBuenrostro/Generador-de-reportes.com">Codigo fuente</a>
+
+        <a href="https://generador-de-reportes.netlify.app">Despliegue</a>
+
+
         </MDBTypography>
     </div>
     )
