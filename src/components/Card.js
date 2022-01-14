@@ -11,7 +11,7 @@ function Card() {
             <MDBCardText>Conocimos el libro del PMI y so procesos para administrar proyectos</MDBCardText>
 
             <MDBCardTitle>Metodologia Agile SCRUM</MDBCardTitle>
-            <MDBCardText>Tuvimos un acercamientpos a las metodologias agiles para desarrollo de software</MDBCardText>
+            <MDBCardText>Tuvimos un acercamiento a las metodologias agiles para desarrollo de software</MDBCardText>
 
             <MDBCardTitle>Product Backlog</MDBCardTitle>
             <MDBCardText>Aprendimos los principales conceptos de un product backlog dentro de la metodologia SCRUM</MDBCardText>
@@ -23,7 +23,7 @@ function Card() {
             <MDBCardText>Colaboramos en equipo para protagonizar los roles especificos de un equipo SCRUM (Product Owner, SCRUM Master y desarrollador)</MDBCardText>
 
             <MDBCardTitle>Calendarizacion de actividades</MDBCardTitle>
-            <MDBCardText>Programamos reuniones semanales para experimentar el desarrollo dynamico y rapidez de las metodologias agiles</MDBCardText>
+            <MDBCardText>Programamos reuniones semanales para experimentar el desarrollo dinamico y rapidez de las metodologias agiles</MDBCardText>
 
             <MDBCardTitle>Producto Final</MDBCardTitle>
             <MDBCardText>Integramos todo lo aprendido durante el semestre para realizar un proyecto y poner en practica la metodologia SCRUM</MDBCardText>
